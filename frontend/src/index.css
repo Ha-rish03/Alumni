@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-900;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.animate-slideUp {
+  animation: slideUp 0.7s ease-out;
+}
+.input-style {
+  @apply w-full p-3 my-2 rounded-lg bg-white/20 text-white outline-none;
+}
+.btn-primary {
+  @apply w-full p-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:scale-[1.03] transition;
+}
